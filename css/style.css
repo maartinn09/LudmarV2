@@ -10,13 +10,9 @@ body {
   margin: 0;
   padding: 0;
   -webkit-user-select: none;
-  /* Para navegadores basados en WebKit como Chrome y Safari */
   -moz-user-select: none;
-  /* Para navegadores basados en Gecko como Firefox */
   -ms-user-select: none;
-  /* Para Internet Explorer/Edge */
   user-select: none;
-  /* Para estándares futuros */
 }
 
 main {
@@ -59,11 +55,11 @@ main {
 .nav-mia img {
   max-width: 30%;
   margin-left: 20px;
-  transition: transform 0.5s; /* Agregamos una transición suave */
+  transition: transform 0.5s;
 }
 
 .nav-mia img:hover {
-  transform: scale(1.1); /* Aplicamos un zoom del 10% cuando el cursor esté sobre la imagen */
+  transform: scale(1.1);
 }
 
 .navegacion-mia li {
@@ -189,11 +185,9 @@ footer .botoncito {
 .apartado-servicios {
   display: flex;
   justify-content: space-around;
-  /* Cambiar a space-around */
   width: 80%;
   height: 510px;
   margin: 50px auto;
-  /* Alinear al centro */
 }
 
 .contenedorsvg {
@@ -232,7 +226,6 @@ footer .botoncito {
 
 .contenedorsubcaja {
   flex-basis: 20%;
-  /* Distribuir en 5 columnas */
   background-color: rgba(128, 127, 123, 0.2);
   padding: 5px;
   text-align: center;
@@ -327,16 +320,13 @@ footer .botoncito {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* Ajustar el contenedor para que se envuelvan en columnas */
     width: 100%;
     gap: 10px;
   }
 
   .contenedorsubcaja {
     flex-basis: calc(50% - 20px);
-    /* Mostrar en dos columnas con espacio (ajusta según tus necesidades) */
     max-width: none;
-    /* Eliminar el max-width para que las subcajas puedan reducir su tamaño */
   }
 }
 
@@ -557,7 +547,6 @@ footer .botoncito {
   transition: background-color 0.3s, color 0.3s;
   font-size: 18px;
   font-family: 'Exo 2', sans-serif;
-  /* Agrega una transición suave para los cambios */
 }
 
 .btnindex:hover {
@@ -587,13 +576,11 @@ footer .botoncito {
 .my-container {
   position: relative;
   width: 100%;
-  /* Ajustamos la altura del contenedor a 'auto' para que se adapte al contenido interno */
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0px 0px 0px;
-  /* Eliminamos el margin-top para evitar espacio adicional en la parte superior */
 }
 
 .my-container::before {
@@ -607,14 +594,12 @@ footer .botoncito {
   width: 100%;
   height: 100%;
   filter: brightness(0.3);
-  /* Ajusta el valor entre 0 y 1 para cambiar el brillo */
   z-index: -1;
 }
 
 .my-content {
   text-align: center;
   color: #fff;
-  /* Eliminamos la altura fija del contenido */
   height: auto;
 }
 
@@ -641,7 +626,6 @@ footer .botoncito {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
-  /* Agrega una transición suave a la propiedad transform */
   font-weight: 600;
   font-size: 18px;
 }
@@ -653,7 +637,6 @@ footer .botoncito {
 
 .my-button:hover {
   transform: translateY(-5px);
-  /* Mueve el botón 5px hacia arriba al colocar el cursor encima */
 }
 
 .my-button a {
@@ -666,7 +649,6 @@ footer .botoncito {
   height: 12px;
   margin-left: 10px;
   fill: #fff;
-  /* Cambia el color aquí */
   filter: brightness(0.8);
 }
 
@@ -736,16 +718,16 @@ footer .botoncito {
   justify-content: center;
   background-color: rgba(128, 127, 123, 0.2);
   margin-bottom: 10px;
-  transition: transform 0.2s; /* Agregamos una transición suave */
+  transition: transform 0.2s;
 }
 
 .travesias:hover {
-  transform: scale(1.1); /* Aplicamos un zoom del 10% cuando el cursor está sobre el contenedor */
+  transform: scale(1.1);
 }
 
 .travesias svg {
   color: rgb(50, 64, 87);
-  animation: move 2s infinite alternate; /* Animación de movimiento */
+  animation: move 2s infinite alternate;
 }
 
 @keyframes move {
@@ -753,10 +735,10 @@ footer .botoncito {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(15deg); /* Gira 80 grados a la derecha */
+    transform: rotate(15deg);
   }
   100% {
-    transform: rotate(-15deg); /* Gira -80 grados a la izquierda */
+    transform: rotate(-15deg);
   }
 }
 
@@ -785,23 +767,18 @@ footer .botoncito {
   justify-content: center;
   line-height: 2;
   margin-bottom: 20px;
-  /* Añade un margen inferior para separarlo del mapa */
 }
 
 .contactomapa {
   width: 100%;
   height: 600px;
-  /* Ajusta la altura según tus necesidades */
   overflow: hidden;
 }
 
 .contactomapa iframe {
   width: 100%;
-  /* Ajustamos el ancho del iframe para que ocupe todo el espacio en el contenedor */
   height: 100%;
-  /* Ajustamos la altura del iframe para que ocupe todo el espacio en el contenedor */
   border: 0;
-  /* Quitamos el borde por defecto del iframe */
 }
 
 
@@ -860,7 +837,6 @@ footer .botoncito {
     max-width: 100%;
     height: 400px;
     object-fit: cover;
-    /* Cambia a 'cover' para ajustar el mapa correctamente */
   }
 }
 
@@ -1075,13 +1051,13 @@ footer .botoncito {
   width: 100%;
   height: 100%;
   background: url("../img/lupa.jpg") center/50% no-repeat;
-  background-color: #000; /* Fondo oscuro */
-  opacity: 0; /* Inicialmente oculto */
+  background-color: #000;
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .owl-carousel .item:hover::before {
-  opacity: 1; /* Mostrar al pasar el cursor */
+  opacity: 1;
 }
 
 .gridgaleria {
@@ -1099,11 +1075,11 @@ footer .botoncito {
   max-height: 300px;
   object-fit: cover;
   border-radius: 5px;
-  transition: transform 0.4s; /* Agregamos una transición suave */
+  transition: transform 0.4s;
 }
 
 .grid-item img:hover {
-  transform: scale(1.04); /* Aplicamos un zoom del 10% cuando el cursor esté sobre la imagen */
+  transform: scale(1.04);
 }
 
 .textandbutton {
@@ -1120,6 +1096,7 @@ footer .botoncito {
   font-weight: 600;
   color: rgb(50, 64, 87);
   margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .textandbutton button {
@@ -1135,11 +1112,18 @@ footer .botoncito {
 
 .textandbutton button:hover {
   background-color: rgb(65, 87, 117);
-  transform: scale(1.03); /* Aumenta el tamaño en un 5% */
+  transform: scale(1.03);
 }
 
 .textandbutton span {
   font-size: 15px;
+}
+
+.hastatantos span{
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .textandbutton a{
@@ -1180,12 +1164,12 @@ footer .botoncito {
   text-decoration: none;
   color: rgb(90, 90, 90);
   display: inline-block;
-  transition: transform 0.4s ease; /* Agregar transición al efecto */
+  transition: transform 0.4s ease;
   font-family: 'Exo 2', sans-serif;
 }
 
 .volver-btn:hover {
-  transform: translateY(5px) translateX(5px); /* Mover en diagonal */
+  transform: translateY(5px) translateX(5px);
 }
 
 .volver-btn .icon {
@@ -1208,9 +1192,9 @@ footer .botoncito {
     top: 0;
     left: 0;
     transform: none;
-    margin-top: 20px; /* Agregar margen inferior para separar del título */
-    display: block; /* Cambiar a bloque para ocupar el ancho completo */
-    text-align: center; /* Centrar el enlace en su contenedor */
+    margin-top: 20px;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -1218,32 +1202,32 @@ footer .botoncito {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-.whatsapp-button img {
-  width: 53px; /* Ajusta el tamaño de la imagen */
-  height: auto;
-  border-radius: 30px;
-}
-
-.atracimg img {
-  transition: transform 0.3s; /* Agregamos una transición suave */
-}
-
-.atracimg img:hover {
-  transform: scale(1.03); /* Aplicamos un zoom del 10% cuando el cursor está sobre la imagen */
+  z-index: 1000;
 }
 
 .whatsapp-button img {
   width: 53px;
   height: auto;
   border-radius: 30px;
-  transition: transform 0.3s; /* Agregamos una transición suave */
+}
+
+.atracimg img {
+  transition: transform 0.3s;
+}
+
+.atracimg img:hover {
+  transform: scale(1.03); 
+}
+
+.whatsapp-button img {
+  width: 53px;
+  height: auto;
+  border-radius: 30px;
+  transition: transform 0.3s; 
 }
 
 .whatsapp-button img:hover {
-  transform: rotate(-360deg) scale(1.05); /* Aplicamos una rotación de 45 grados y un zoom del 10% cuando el cursor está sobre la imagen */
+  transform: rotate(-360deg) scale(1.05); 
 }
 
 .copyright{
